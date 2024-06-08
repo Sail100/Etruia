@@ -83,8 +83,15 @@ local Window = Rayfield:CreateWindow({
  local ibtn = i:CreateButton({
     Name = "Install",
     Callback = function()
-       -- notify('Rita Clients Information', 'Rita Clients is still in development. Please wait for the release on the discord.', 6)
           notify('Information', 'Please wait..', 3)
           reset()
+          local p1 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/2619619496GUIPositions.vapeprofile.txt')
+          local p2 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/6872265039.vapeprofile.txt')
+          local p3 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/6872265039.vapeprofiles.txt')
+          local p4 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/6872274481.vapeprofile.txt')
+          local p5 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/6872274481.vapeprofiles.txt')
+          local p6 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/Velocity_Chaos6872274481.vapeprofile.txt')
+          local p7 = raf('https://raw.githubusercontent.com/Sail100/Rita/main/Profiles/bedwarsdata.txt')
+          notify('Rita Clients Information', 'Rita Clients is still in development. Please wait for the release on the discord.', 6)
     end
  })
