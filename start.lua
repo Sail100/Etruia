@@ -28,6 +28,7 @@ end
 local Window = Rayfield:CreateWindow({
     Name = "Rita Clients",
     LoadingTitle = "Installer is loading..",
+    LoadiConfiguration= "Get Ready..",
     ConfigurationSaving = {
        Enabled = false,
        FolderName = nil,
@@ -53,9 +54,9 @@ local Window = Rayfield:CreateWindow({
 
  function notify(title, content, time)
     Rayfield:Notify({
-            Title = title
-            Content = content
-            Duration = time
+            Title = title,
+            Content = content,
+            Duration = time,
             Actions = {
             Close = {
                  Name = "Close",
@@ -72,7 +73,6 @@ local Window = Rayfield:CreateWindow({
 
  local mw = m:CreateSection("Welcome to RC Loader. (Rita Clients). To get started, head to the Installer Tab.")
 
-
  local closebtn = m:CreateButton({
     Name = "Close",
     Callback = function()
@@ -83,7 +83,8 @@ local Window = Rayfield:CreateWindow({
  local ibtn = i:CreateButton({
     Name = "Install",
     Callback = function()
-        notify('Rita Clients Information', 'Rita Clients is still in development. Please wait for the release on the discord.', 6)
+       -- notify('Rita Clients Information', 'Rita Clients is still in development. Please wait for the release on the discord.', 6)
+          notify('Information', 'Please wait..', 3)
+         reset()
     end
  })
-
