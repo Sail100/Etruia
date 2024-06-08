@@ -28,7 +28,7 @@ end
 local Window = Rayfield:CreateWindow({
     Name = "Rita Clients",
     LoadingTitle = "Installer is loading..",
-    LoadiConfiguration= "Get Ready..",
+    LoadingSubtitle = "loading.",
     ConfigurationSaving = {
        Enabled = false,
        FolderName = nil,
@@ -85,6 +85,6 @@ local Window = Rayfield:CreateWindow({
     Callback = function()
        -- notify('Rita Clients Information', 'Rita Clients is still in development. Please wait for the release on the discord.', 6)
           notify('Information', 'Please wait..', 3)
-         reset()
+          reset()
     end
  })
