@@ -1,4 +1,5 @@
 ---> [definition]
+
 local Players: Players = game:GetService('Players');
 local lplr: Player = Players.LocalPlayer;
 
@@ -6,7 +7,6 @@ local lplr: Player = Players.LocalPlayer;
 
 local httprequest = (http and http.request or http_request or fluxus and fluxus.request or syn and syn.request or request);
 local clonefunc = (clonefunction or clonefunc or function(func) return func end);
-local library: any = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 ---> [boot up]
 
