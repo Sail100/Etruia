@@ -1,5 +1,5 @@
 local Players: Players = game:GetService('Players');
-local lplr: Player? = Players.LocalPlayer;
+local lplr: Player = Players.LocalPlayer;
 
 ---> [functions]
 local httprequest = http.request;
