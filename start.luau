@@ -3,7 +3,7 @@ local lplr: Player = Players.LocalPlayer;
 
 ---> [functions]
 local httprequest = http.request;
-local clonefunc = getgenv().clonefuction;
+local clonefunc = getgenv().clonefunction;
 
 ---> [boot up]
 
